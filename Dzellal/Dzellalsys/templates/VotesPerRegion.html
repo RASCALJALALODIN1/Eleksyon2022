@@ -1,0 +1,44 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>List of Counted Votes</title>
+</head>
+	<body style="background-color: #c3c3c3;">
+		<h1 style="color: #bd2031; font-family: monospace, Courier New; font-size: 35px;text-align: center;">Counted Votes</h1>
+		
+		<table style=""width:100%>
+			<tr>
+				<th>Region</th>
+				<th>Votes</th>
+
+			</tr>
+				<tr>
+			
+				{%for item in numvotes%}
+					<td> {{item.cavite}} </td>
+					<td> {{item.batangas}} </td>
+					<td> {{item.laguna}} </td>
+					<td> {{item.rizal}} </td>
+					<td> {{item.qprov}} </td>
+				<tr>
+				{%endfor%}
+		
+			</tr>
+		</table>
+		
+
+		<br>
+		
+
+	<br>
+	<br>
+	<br>
+	
+	
+	</body>
+</html>

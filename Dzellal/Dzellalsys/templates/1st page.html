@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>E-Leksyon</title>
+		<link rel="icon" type="image/x-icon" href="Picx/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}">
+		
+
+
+			
+	</head>
+	<body class="BackgroundImage">
+
+		<div class="grid-container">
+
+			<div class="logo">
+
+				<img class="logo"
+						src="{% static "images/eleksyon.png"%}"
+						alt="Logo here">
+				</div>
+
+
+			<div class="header">
+
+				<h1 class="a">
+					<a class="a" href="{% url "Mainpage" %}">E-LEKFORM</a>
+					<br>
+					<a class="a" href="{% url "Responses" %}">Responses</a>
+					<br>
+					<a class="a" href="{% url "Index" %}">Homepage</a>
+				</h1>
+
+			</div> 
+
+			<div class="trivia">
+				<img class="dyk"
+						src="{% static "images/DYK.png"%}"
+						alt="Did You Know?">
+				<div class="a"></div>
+
+					<a href="https://legacy.senate.gov.ph/senators/former_senators/eva_estrada_kalaw.htm">
+					<img class="EvaKalaw"
+						src="{% static "images/EvaKalaw.jpg"%}"
+						alt="Eva Kalaw"></a>
+					<br>
+					<br>
+
+					<h3 class="a"><em>Eva Estrada Kalaw</em></h3> <p class="a">was the First Filipina to be elected Senator twice, in 1965 and in 1971</p>
+
+				
+			</div>
+
+			<div class="feat1">
+				<img class="phiknows"
+						src="{% static "images/pknows.png"%}"
+						alt="logo">
+				 <p class="b"><img class="SG"
+						src="{% static "images/SG.jpg"%}"
+						alt="Sergio Osmena"><em>Sergio Osmena</em> was the one who rehabilitated the Philippine National Bank and during his presidency the country joined the International Monetary Fund. </p>
+
+				
+
+			</div>
+
+			<div class="feat2">
+				<img class="phiknows"
+						src="{% static "images/pknows.png"%}"
+						alt="logo">
+				<p class="a"><img class="CG"
+						src="{%static "images/CG.jfif" %}"
+						alt="Carlos Garcia"><em>Carlos P. Garcia</em> was known for his "First Filipino Policy," which favored Filipino businesses over foreign investors. Cultural and Arts was revived during his term.</p>
+
+
+			</div>
+
+			<div class="feat3">
+				<img class="phiknows"
+						src="{% static "images/pknows.png"%}"
+						alt="Logo">
+				<p class="a"><img class="DM"
+						src="{% static "images/DM.jfif"%}"
+						alt="Diosdado Macapagal"><em>Diosdado Macapagal</em> was known for establishing "First Land Reform Law", which allows the purchase of private farmland to distribute in Filipino's who are landless.
+				</p>
+
+
+			</div>
+
+			<div class="how">
+				<a href="HowToVote.html"><img class="htv"
+						src="{% static "images/htv.png" %}"
+						alt="Logo"></a>
+				<a href="HowToRegister.html"><img class="htr"
+						src="{% static "images/htr.png"%}"
+						alt="Logo"></a>
+				<a href="UpcomingEvents.html"><img class="ue"
+				        src="{% static "images/ue.png"%}"
+				        alt="Logo">	</a>
+				
+			</div>
+
+			<div class="hashtag">
+				<p class="hashtag">#HALALAN2022</p>
+
+				
+
+
+
+
+			</div>
+		</div>
+	</body>
+</html>

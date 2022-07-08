@@ -1,0 +1,115 @@
+{% extends 'templates.html' %}
+{% load static %}
+{% block content %}
+
+
+<form method="POST" action = "/Mainpage/">
+	{%csrf_token%}
+		<h1>E-LEKSYON</h1>
+		<h2>PRESIDENT AND VICE PRESIDENT ELECTION SURVEY</h2>
+		<h3 class="a">
+			<a class="a" href="{% url "Mainpage" %}">E-LEKFORM</a>
+			<br>
+			<a class="a" href="{% url "Responses" %}">Responses</a>
+			<br>
+			<a class="a" href="{% url "Index" %}">Homepage</a>
+		</h3>
+		<label>First Name:</label>
+		<input type="text" id="Firstname" name="fname" size="30" placeholder="Enter your name here." required>
+
+
+		<br>
+		<label>Middle Name:</label>
+		<input type="text" id="Middlename" name="mname" size="30" placeholder="Enter your Middle name here."required>
+
+		<br>
+		<label>Surname:</label>
+		<input type="text" id="Surname" name="sname" size="30" placeholder="Enter your Surname here."required>
+		
+		<br>
+		<label>Age:</label>
+		<input type="text" id="Age" name="age" size="30" placeholder="Enter your Age."required>
+		<hr>
+		<br>
+		<br>
+		
+		<label>Are you a Registered Voter?</label>
+		<br>
+		<input type="radio" name="rvote" id="Yes" value="Yes"><label>Yes</label>
+		<input type="radio" name="rvote" id="No" value="No"><label>No</label>
+		<br>
+		<br>
+		<label>Region IV- A</label>
+		<select name="region" id="Region" required>
+			
+			<option value=""></option>
+			<option value="Cavite">Cavite</option>
+			<option value="Laguna">Laguna</option>
+			<option value="Batangas">Batangas</option>
+			<option value="Rizal">Rizal</option>
+			<option value="Quezon Province">Quezon Province</option>
+
+
+		</select>
+		<br>
+		<br>
+		<label>Precint Number:</label>
+		<input type="text" name="pnum" id="What" size="30" placeholder="Write you answer.">
+		<br>
+		<br>
+		<label>Which President will you vote for the upcoming Election?</label>
+		<select name="pres" id="Pres" required>
+			
+			<option value=""></option>
+			<option value="Leni Robredo">Leni Robredo</option>
+			<option value="BongBong Marcos">BongBong Marcos</option>
+			<option value="Manny Pacquiao">Manny Pacquiao</option>
+			<option value="Isko Moreno">Isko Moreno</option>
+			<option value="Ping Lacson">Ping Lacson</option>
+
+		</select>
+
+		<br>
+		<br>
+		<label>Which Vice-President will you vote for the upcoming Election?</label>
+		<select name="vpres" id="VPres" required>
+			
+			<option value=""></option>
+			<option value="Vicente Sotto">Vicente Sotto</option>
+			<option value="Sara Inday Duterte">Sara Duterte</option>
+			<option value="Doc Willie Ong">Willie Ong</option>
+			<option value="Kiko Pangilinan">Kiko Pangilinan</option>
+			<option value="Lito Atienza">Lito Atienza</option>
+
+
+		</select>
+		<br>
+		<br>
+		<label>Which Partylist will you vote for the upcoming Election?</label>
+		<select name="political_party" id="Partylist"
+			<option value=""></option>
+			<option value="ACT CIS">ACT CIS</option>
+			<option value=" 1-RIDER PARTYLIST">1-RIDER PARTYLIST</option>
+			<option value="TINGOG">TINGOG</option>
+			<option value="ACT TEACHERS">ACT TEACHERS</option>
+			<option value="ANGAT">ANGAT</option>
+			<option value="KABATAAN">KABATAAN</option>
+			<option value="MARINO">MARINO</option>
+			<option value="PROBINSYANO AKO">PROBINSYANO AKO</option>
+			<option value="LPGMA">LPGMA</option>
+			<option value="API">API</option>
+		</select>
+		
+		
+
+
+		<br>
+		<br>
+		
+	
+		 <input type = 'Submit'> SUBMIT </button> 
+
+	<br>
+</form>
+
+{% endblock %}

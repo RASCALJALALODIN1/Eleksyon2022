@@ -1,0 +1,23 @@
+{% extends 'templates.html' %}
+{% load static %}
+{% block content %}
+
+<form method="POST" action="">
+    {% csrf_token%} 
+<div>
+    <div> First Name: {{form.fname}}</div>
+    <div> Middle Name: {{form.mname}}</div>
+    <div> Last Name: {{form.sname}}</div>
+    <div> Age: {{form.age}}</div>
+    <div> Region: {{form.region}}</div>
+    <div> Registered Vote: {{form.rvote}}</div>
+    <div> Precint # : {{form.pnum}}</div>
+    <div hidden> President: {{form.pres}}</div>
+    <div hidden> Vice President: {{form.vpres}}</div>
+    <div hidden> Party list # : {{form.political_party}}</div>
+
+    <div>
+        <input type = "Submit" class="btn primary" ></input>
+    </div>
+</div>
+{% endblock %}      				
